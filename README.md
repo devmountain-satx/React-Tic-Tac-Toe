@@ -1,27 +1,16 @@
-# React + TypeScript + Vite
+# React + Vite + Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This was built following the - [Learning React Tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
 
-Currently, two official plugins are available:
+### With this Tic-Tac-Toe game, you can:
+- Play tic-tac-toe
+- Indicate when a player has won the game
+- Store a game’s history as a game progresses
+- Allow players to review a game’s history and see previous versions of a game’s board
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Here are some ideas for improvements that you could make to the tic-tac-toe game, listed in order of increasing difficulty:
+- For the current move only, show “You are at move #…” instead of a button.
+- Rewrite Board to use two loops to make the squares instead of hardcoding them.
+- Add a toggle button that lets you sort the moves in either ascending or descending order.
+- When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
+- Display the location for each move in the format (row, col) in the move history list.
